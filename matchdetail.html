@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Submission 3</title>
+    <meta name="description" content="Submission 3"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/img/icons/icon-192x192.png">
+    <link rel="shorcut icon" href="/img/icons/icon-72x72.png">
+    <meta name="theme-color" content="#311b92"/>
+</head>
+<body>
+    <!-- Navigasi -->
+    <nav class="deep-purple darken-4" role="navigation">
+        <div class="nav-wrapper container">
+            <a href="./index.html" class="hide-on-small-only brand-logo yellow-text text-darken-1" id="logo-container">Premier League</a>
+            <a href="./index.html" class="hide-on-med-and-up brand-logo yellow-text text-darken-1" id="logo-container">PL</a>
+            <a href="./index.html" class="sidenav-trigger" data-target="nav-mobile"><i class="material-icons">arrow_back</i></a>
+            
+            <ul class="topnav right hide-on-med-and-down"></ul>
+            <ul class="sidenav" id="nav-mobile"></ul>
+        </div>
+    </nav>
+    <!-- Akhir Navigasi -->
+    <div class="container" id="body-content"></div>
+  
+    <script src="js/materialize.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="regist.js"></script>
+    <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                getMatchDetail();
+            });
+    </script>
+</body>
+</html>
